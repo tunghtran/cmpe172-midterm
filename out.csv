@@ -1,3 +1,9 @@
-orderID,type,amount,currency
-Sun Oct 23 2016 01:07:06 GMT-0700 (Pacific Daylight Time),buy,10,USD
-Sun Oct 23 2016 01:07:08 GMT-0700 (Pacific Daylight Time),sell,100,USD
+orderID,type,amount,currency,conversionRate
+Sun Oct 23 2016 01:22:27 GMT-0700 (Pacific Daylight Time),buy,10,USD,653.9
+Sun Oct 23 2016 01:22:32 GMT-0700 (Pacific Daylight Time),sell,19999,CZK,15551.9808
+Sun Oct 23 2016 01:22:35 GMT-0700 (Pacific Daylight Time),buy,1000,BTC,
+Sun Oct 23 2016 01:22:44 GMT-0700 (Pacific Daylight Time),sell,100000,JPY,65947.6032
+Sun Oct 23 2016 01:22:51 GMT-0700 (Pacific Daylight Time),buy,10000,EUR,603.35
+Sun Oct 23 2016 01:22:56 GMT-0700 (Pacific Daylight Time),sell,1923,GBP,535.59
+Sun Oct 23 2016 01:22:59 GMT-0700 (Pacific Daylight Time),buy,1000,VND,14207370.799788
+Sun Oct 23 2016 01:23:10 GMT-0700 (Pacific Daylight Time),sell,1234234123,AUD,840.315

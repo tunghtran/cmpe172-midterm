@@ -56,7 +56,8 @@ function myEval(cmd, context, filename, callback){
 							orderID : orderID,
 							type: 'buy',
 							amount: amount, 
-							currency: currency
+							currency: currency,
+							conversion_rate: rate
 						};
 	              		//Calculate amount of bitcoins you are buying
 	            		var amount_in_btc = amount / rate;
@@ -69,7 +70,8 @@ function myEval(cmd, context, filename, callback){
 						orderID : orderID,
 						type: 'buy',
 						amount: amount,
-						currency: currency
+						currency: currency,
+						conversion_rate: rate
 					};
               		callback('Order to BUY ' + amount.toString() + ' BTC queued.');
             	}
@@ -96,7 +98,8 @@ function myEval(cmd, context, filename, callback){
 							orderID : orderID,
 							type: 'sell',
 							amount: amount,
-							currency: currency
+							currency: currency,
+							conversion_rate: rate
 						};
                   		var amount_in_btc = amount / rate;
                   		callback('Order to SELL ' + amount.toString() + ' ' + currency + ' worth of BTC queued @ ' + rate + ' BTC/' + currency + ' (' + amount_in_btc + ' BTC) ' );              
@@ -108,7 +111,8 @@ function myEval(cmd, context, filename, callback){
 						orderID : orderID,
 						type: 'sell',
 						amount: amount,
-						currency: currency
+						currency: currency,
+						conversion_rate: rate
 					};
                     callback('Order to SELL ' + amount.toString() + ' BTC queued.');
                 }
@@ -117,7 +121,7 @@ function myEval(cmd, context, filename, callback){
           	//Display all outstanding orders
           	case 'orders':
 				console.log('=== CURRENT ORDERS ===');
-				var headers = ["orderID","type","amount","currency"];
+				var headers = ["orderID","type","amount","currency", "conversionRate"];
 				var stringifier = csv.stringify({ header: true, columns: headers}); //Display header
                	_.each(orders,function(order,orderID){ 
             	    var result = orderID + ' : ' + order.type.toUpperCase() + ' ' + order.amount + ' : UNFILLED';
