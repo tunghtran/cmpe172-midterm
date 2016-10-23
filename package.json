@@ -1,0 +1,11 @@
+{
+  "name": "cmpe172-midterm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "midterm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
